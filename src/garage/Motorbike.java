@@ -24,6 +24,13 @@ public class Motorbike extends Vehicle{
 	public String passengerCount() {
 		return "Your motorbike can have a maximum of " + getMaxPassenger() + " passengers";
 	}
+
+	@Override
+	public String toString() {
+		return "Motorbike [model=" + model + ", tanksize=" + tanksize + ", additionalfeature=" + additionalfeature
+				+ ", getWheels()=" + getWheels() + ", isInsurance()=" + isInsurance() + ", getMaxPassenger()="
+				+ getMaxPassenger() + ", getColour()=" + getColour() + "]";
+	}
 	
 	
 	

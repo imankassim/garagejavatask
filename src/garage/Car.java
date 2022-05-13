@@ -26,6 +26,16 @@ public class Car extends Vehicle{
 	public String passengerCount() {
 		return "Your car can have a maximum of " + getMaxPassenger() + " passengers";
 	}
+
+	@Override
+	public String toString() {
+		return "Car [doors=" + doors + ", electric=" + electric + ", model=" + model + ", getWheels()=" + getWheels()
+				+ ", isInsurance()=" + isInsurance() + ", getMaxPassenger()=" + getMaxPassenger() + ", getColour()="
+				+ getColour() + "]";
+	}
+	
+	//newline - /r/n
+	
 	
 
 	

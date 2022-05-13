@@ -27,6 +27,15 @@ public class Bike extends Vehicle{
 	public String passengerCount() {
 		return "Your bike can have a maximum of " + getMaxPassenger() + " passengers";
 	}
+
+
+	@Override
+	public String toString() {
+		return "Bike [model=" + model + ", electric=" + electric + ", gearcount=" + gearcount + ", getWheels()="
+				+ getWheels() + ", isInsurance()=" + isInsurance() + ", getMaxPassenger()=" + getMaxPassenger()
+				+ ", getColour()=" + getColour() + "]";
+	}
+	
 	
 	
 	
