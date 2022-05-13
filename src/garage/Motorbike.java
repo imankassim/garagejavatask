@@ -31,6 +31,40 @@ public class Motorbike extends Vehicle{
 				+ ", getWheels()=" + getWheels() + ", isInsurance()=" + isInsurance() + ", getMaxPassenger()="
 				+ getMaxPassenger() + ", getColour()=" + getColour() + "]";
 	}
+
+	
+	//getters and setters
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public int getTanksize() {
+		return tanksize;
+	}
+
+	public void setTanksize(int tanksize) {
+		this.tanksize = tanksize;
+	}
+
+	public String getAdditionalfeature() {
+		return additionalfeature;
+	}
+
+	public void setAdditionalfeature(String additionalfeature) {
+		this.additionalfeature = additionalfeature;
+	};
+
+	@Override
+	public float fixVehicle() {
+		float repaircost = 40;
+		repaircost = repaircost + (30 * getWheels()) + (5 * getMaxPassenger()) + (30 * getTanksize());
+		return repaircost;
+	}
+	
 	
 	
 	

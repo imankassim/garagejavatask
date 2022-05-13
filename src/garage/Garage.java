@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Garage { //is this right? 
 	
-	public static List<Vehicle> garagelist = new ArrayList<>();
+	public List<Vehicle> garagelist = new ArrayList<>();
 	
-	public static void main(String[] args) {
+	public void trythisforgarage() {
 		
 		//car var = (int wheels, boolean insurance, int maxPassenger, String colour, int doors, boolean electric, String model)
 		Car toyota1 = new Car(4, true, 5, "Blue", 3, true, "Yaris");
@@ -36,22 +36,36 @@ public class Garage { //is this right?
 		addVehicle(yamaha1);
 		addVehicle(harleyd2);
 		
+		
+		//removeVehicle();
 		enhancediterate();
-	}
+		
+		System.out.println(garagelist.get(4).fixVehicle());
+		System.out.println(garagelist.get(0).fixVehicle());
+		System.out.println(garagelist.get(2).fixVehicle());
+		
+	};
 	
-	public static void enhancediterate() {
+
+	
+	public void enhancediterate() {
 		for (Vehicle i : garagelist) {
 			System.out.println(i);
 		};
 	};
 	
 	
-	public static boolean addVehicle(Vehicle newVehicle) {
+	public boolean addVehicle(Vehicle newVehicle) {
 		garagelist.add(newVehicle);
 		return true;
 		
 	}
 
+	public boolean removeVehicle() {
+		garagelist.removeIf(t -> t.getWheels() == 1);
+		return true;
+
+	}
 	
 
 }

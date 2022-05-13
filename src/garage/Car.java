@@ -15,6 +15,58 @@ public class Car extends Vehicle{
 		this.model = model;
 	}
 
+	
+	
+	
+	
+	public int getDoors() {
+		return doors;
+	}
+
+
+
+
+
+	public void setDoors(int doors) {
+		this.doors = doors;
+	}
+
+
+
+
+
+	public boolean isElectric() {
+		return electric;
+	}
+
+
+
+
+
+	public void setElectric(boolean electric) {
+		this.electric = electric;
+	}
+
+
+
+
+
+	public String getModel() {
+		return model;
+	}
+
+
+
+
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+
+
+
+
 	//abstract methods
 	@Override
 	public String wheelCount() {
@@ -32,6 +84,13 @@ public class Car extends Vehicle{
 		return "Car [doors=" + doors + ", electric=" + electric + ", model=" + model + ", getWheels()=" + getWheels()
 				+ ", isInsurance()=" + isInsurance() + ", getMaxPassenger()=" + getMaxPassenger() + ", getColour()="
 				+ getColour() + "]";
+	}
+
+	@Override
+	public float fixVehicle() {
+		float repaircost = 40;
+		repaircost = repaircost + (30 * getWheels()) + (5 * getMaxPassenger()) + (30 * getDoors());
+		return repaircost;
 	}
 	
 	//newline - /r/n

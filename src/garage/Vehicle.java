@@ -64,6 +64,9 @@ public abstract class Vehicle {
 	
 	
 	
+	//abstract method fixVehicle
+	public abstract float fixVehicle();
+	
 	
 	
 

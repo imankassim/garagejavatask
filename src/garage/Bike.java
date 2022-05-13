@@ -37,6 +37,12 @@ public class Bike extends Vehicle{
 	}
 	
 	
+	@Override
+	public float fixVehicle() {
+		float repaircost = 40;
+		repaircost = repaircost + (30 * getWheels()) + (5 * getMaxPassenger());
+		return repaircost;
+	}
 	
 	
 	

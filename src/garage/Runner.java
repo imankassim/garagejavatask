@@ -4,6 +4,9 @@ public class Runner {
 
 	public static void main(String[] args) {
 		
+		
+		Garage newGarage = new Garage();
+		
 		//make new objects - datatype of vehicletype
 		
 //		//car var = (int wheels, boolean insurance, int maxPassenger, String colour, int doors, boolean electric, String model)
@@ -26,7 +29,10 @@ public class Runner {
 //		System.out.println(raleigh1.passengerCount());
 //		System.out.println(harleyd2.passengerCount());
 		
-		Garage.enhancediterate();
+		newGarage.enhancediterate();
+		//newGarage.enhancediterate();
+		
+		
 //		
 
 	}
